@@ -1,40 +1,10 @@
 import numpy as np
-from keras.models import Model
-from keras.callbacks import ModelCheckpoint
-from keras.layers import (Input, Dense, Concatenate)
-from keras.utils import np_utils
-from sklearn.model_selection import cross_val_score, GridSearchCV, cross_validate, train_test_split
-import pandas
-#from keras.datasets import mnist
-from sklearn.preprocessing import MinMaxScaler
-import matplotlib.pyplot as plt
-from sklearn.svm import SVC
-from sklearn.model_selection import StratifiedKFold
-from sklearn.feature_selection import RFECV
-from sklearn.datasets import make_classification
-import numpy as np
-from sklearn.metrics import accuracy_score
-from sklearn.metrics import f1_score
-from sklearn.model_selection import train_test_split
-from sklearn import svm
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.model_selection import KFold
-from sklearn import tree
-import graphviz
-from sklearn.neural_network import MLPClassifier
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import  RandomForestClassifier, AdaBoostClassifier
-from sklearn.naive_bayes import GaussianNB
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import balanced_accuracy_score
-from sklearn.metrics import precision_score
-from sklearn.metrics import recall_score
-import riboflow as rf
 
-# input image dimensions
-img_rows, img_cols = 28, 28
-input_shape = (3922, )
+import pandas
+
+
+
+
 
 #cancer = open("cluster_features/Normal_Early/Hierarchical_200_Normal_Early.csv","r")
 cancer = open("cat_transpose.csv","r")
